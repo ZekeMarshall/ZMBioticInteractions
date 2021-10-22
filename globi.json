@@ -1,5 +1,5 @@
 { 
-  "_comment": "Sample GloBI dataset descriptor. See http://github.com/globalbioticinteractions for more information.",
-  "citation": "Jorrit H. Poelen. 2014. Species associations manually extracted from literature.",
+  "_comment": "Repository containing species interactions information manually extracted from the literature. See http://github.com/globalbioticinteractions for more information.",
+  "citation": "Zeke Marshall. 2021. Species interactions manually extracted from literature.",
   "deprecated": false
 }
