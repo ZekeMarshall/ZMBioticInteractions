@@ -1,0 +1,48 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# ZMBioticInteractions
+
+<!-- badges: start -->
+
+[![GloBI review by Elton](https://github.com/ZekeMarshall/ZMBioticInteractions/actions/workflows/review.yml/badge.svg)](https://github.com/ZekeMarshall/ZMBioticInteractions/actions)
+[![DOI](https://zenodo.org/badge/417590334.svg)](https://zenodo.org/badge/latestdoi/417590334)
+[![Build Status](https://app.travis-ci.com/ZekeMarshall/ZMBioticInteractions.svg?branch=main)](https://app.travis-ci.com/ZekeMarshall/ZMBioticInteractions)
+[![GloBI](https://api.globalbioticinteractions.org/interaction.svg?accordingTo=globi:ZekeMarshall/ZMBioticInteractions)](https://globalbioticinteractions.org/?accordingTo=globi:ZekeMarshall/ZMBioticInteractions)
+
+<!-- badges: end -->
+
+## Outline
+
+This repository contains information on species interactions derived from literature 
+for inclusion into the Global Biotic Interactions Database (GloBI, http://globalbioticinteractions.org). Interactions are only included if each
+organism is specifically referred to in the text.
+
+## Data
+
+Interactions have been recorded from the following sources:
+
+```{r table, echo=FALSE, message=FALSE, warning=FALSE}
+
+data <- read.csv("interactions.csv")
+
+count <- data |> 
+  dplyr::group_by(referenceCitation) |> 
+  dplyr::summarise(count = dplyr::n())
+
+gt::gt(count)
+
+
+```
+
+
