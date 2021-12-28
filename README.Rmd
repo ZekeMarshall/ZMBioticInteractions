@@ -25,8 +25,8 @@ knitr::opts_chunk$set(
 ## Outline
 
 This repository contains information on species interactions derived from literature 
-for inclusion into the Global Biotic Interactions Database (GloBI, http://globalbioticinteractions.org). Interactions are only included if each
-organism is specifically referred to in the text.
+for inclusion into the Global Biotic Interactions Database (GloBI, http://globalbioticinteractions.org). Interactions are only included if the full
+name of each organism is described in the interaction.
 
 ## Data
 
@@ -38,9 +38,15 @@ data <- read.csv("interactions.csv")
 
 count <- data |> 
   dplyr::group_by(referenceCitation) |> 
-  dplyr::summarise(count = dplyr::n())
+  dplyr::summarise(count = dplyr::n()) |> 
+  dplyr::rename("Source" = referenceCitation,
+                "Interactions" = count)
 
-gt::gt(count)
+# gt::gt(count)
+
+kableExtra::kable(x = count, 
+                  format = "html", 
+                  caption = "")
 
 
 ```

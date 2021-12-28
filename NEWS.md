@@ -1,3 +1,10 @@
+# ZMBioticInteractions 0.1.3 (2021-12-28)
+
+* Adding data from Coleman (2009).
+
+* Adding data from Cooper (2006).
+
+
 # ZMBioticInteractions 0.1.2 (2021-12-24)
 
 * Adding data from Tittensor (2016).
