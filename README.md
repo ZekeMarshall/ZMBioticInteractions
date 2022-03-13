@@ -74,5 +74,15 @@ History of Sitka Spruce. United Kingdom: Windgather Press.
 34
 </td>
 </tr>
+<tr>
+<td style="text-align:left;">
+Welch, R. C., & Greatorex-Davies, J. N. (1993). Colonization of two
+Nothofagus species by Lepidoptera in southern Britain. Forestry: An
+International Journal of Forest Research, 66(2), 181-203.
+</td>
+<td style="text-align:right;">
+133
+</td>
+</tr>
 </tbody>
 </table>
